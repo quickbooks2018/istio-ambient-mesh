@@ -74,4 +74,5 @@ cp -rv istio-1.20.1/bin/istioctl /usr/local/bin
 
 ```bash
 kubectl apply -R -f  istio-1.20.1/samples/addons
+kubectl delete -R -f  istio-1.20.1/samples/addons
 ```
