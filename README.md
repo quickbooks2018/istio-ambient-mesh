@@ -54,3 +54,24 @@ helm $(echo $helm_opts)  ztunnel ztunnel
 ```bash
 kubectl label ns default istio.io/dataplane-mode=ambient
 ```
+
+- istioctl installation
+
+- Istio latest version
+
+```bash
+curl -L https://istio.io/downloadIstio | sh -
+```
+
+- Specific version
+
+```bash
+curl -L https://github.com/istio/istio/releases/download/1.20.1/istio-1.20.1-linux-amd64.tar.gz | tar xvz
+cp -rv istio-1.20.1/bin/istioctl /usr/local/bin
+```
+
+- Istio Addon Installation
+
+```bash
+kubectl apply -R -f  istio-1.20.1/samples/addons
+```
