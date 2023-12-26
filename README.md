@@ -2,6 +2,11 @@
 
 - Helm Install Istio Ambient Mesh
 
+- Istio Ambient Mesh Installation with istioctl
+```bash
+istioctl install --set profile=ambient
+```
+
 ```bash
 #!/bin/bash
 # Install Ambient Mesh with Helm Charts
