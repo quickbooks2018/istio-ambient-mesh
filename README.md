@@ -7,6 +7,8 @@
 istioctl install --set profile=ambient
 ```
 
+- Istio Versions https://github.com/istio/istio/releases
+
 ```bash
 #!/bin/bash
 # Install Ambient Mesh with Helm Charts
