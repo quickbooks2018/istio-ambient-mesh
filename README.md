@@ -6,6 +6,11 @@
 ```bash
 istioctl install --set profile=ambient
 ```
+- Enable the Ingress Gateway for Ambient Mesh
+
+```bash
+istioctl install --set profile=ambient --set "components.ingressGateways[0].enabled=true" --set "components.ingressGateways[0].name=istio-ingressgateway"
+```
 
 - Istio Versions https://github.com/istio/istio/releases
 
